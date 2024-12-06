@@ -42,7 +42,7 @@ class Grid:
     def findXmas(self, startX: int, startY: int) -> bool:
         currX = startX
         currY = startY
-        
+
         toplx, toply, _ = upLeft(currX, currY)
         botlx, botly, _ = downLeft(currX, currY)
         toprx, topry, _ = upRight(currX, currY)
