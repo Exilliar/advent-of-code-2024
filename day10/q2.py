@@ -57,8 +57,6 @@ def findPath(x: int, y: int, maxX: int, maxY: int, grid: List[List[str]]) -> Tup
 
     return (False, [])
 
-
-
 with open("input.txt", "r") as f:
     grid = [list(line.replace("\n", "")) for line in f.readlines()]
     maxY = len(grid)
