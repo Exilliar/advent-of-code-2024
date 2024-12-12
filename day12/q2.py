@@ -77,16 +77,6 @@ def removePerimVals(x: int, y: int, dir: str, perimeterValues: list, perimeterVa
             perimeterValuesDict[key] = 1
         currX, currY, _ = func(currX, currY)
 
-def maxReached(x: int, y: int, perimeterValuesDict: dict, perimeterValues: list):
-    count = 0
-    for val in perimeterValues:
-        if val[0] == x and val[1] == y:
-            count += 1
-    key = makeKey(x, y)
-    if perimeterValuesDict[key] == count:
-        return False
-    return True
-
 with open("input.txt", "r") as f:
     grid = [list(line.replace("\n", "")) for line in f.readlines()]
     visitedCells = {}
